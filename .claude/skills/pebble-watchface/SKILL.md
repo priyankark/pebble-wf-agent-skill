@@ -19,13 +19,16 @@ Every watchface request follows this complete flow:
 4. **Build** → Run `pebble build` to generate PBW
 5. **Test** → Run in QEMU, capture screenshot, visually verify with Read tool
 6. **Iterate** → Fix issues until screenshot looks good
-7. **Deliver** → Report PBW location with verified screenshots
+7. **Generate Assets** → Create app icons and preview GIFs using helper scripts
+8. **Deliver** → Report PBW location with verified screenshots, icons, and GIFs
 
 **Never stop until:**
 - PBW is built successfully
-- Screenshot is captured from QEMU
+- Screenshots captured from QEMU for all platforms
 - Visual verification confirms it looks correct
-- User receives the final artifact
+- App icons (80x80, 144x144) are generated
+- Preview GIFs are created (for animated watchfaces)
+- User receives the final artifacts
 
 ---
 
@@ -399,7 +402,26 @@ Look for:
 
 ## Phase 6: Deliver
 
-### Report to User
+### Step 1: Generate App Icons and Preview GIFs
+
+After all screenshots are captured, run the helper scripts to generate marketing assets:
+
+```bash
+# Generate app icons (80x80 and 144x144) from screenshot_basalt.png
+python3 /path/to/skills/pebble-watchface/scripts/create_app_icons.py .
+
+# Generate animated GIF previews (requires emulators to be running)
+python3 /path/to/skills/pebble-watchface/scripts/create_preview_gif.py . --frames 8 --delay 400
+```
+
+This creates:
+- `icon_80x80.png` - Small app icon
+- `icon_144x144.png` - Large app icon
+- `preview_basalt.gif` - Animated color preview
+- `preview_aplite.gif` - Animated B&W preview
+- `preview_chalk.gif` - Animated round preview
+
+### Step 2: Report to User
 After successful build AND visual verification:
 
 1. **PBW Location**: `build/watchface-name.pbw`
@@ -409,17 +431,26 @@ After successful build AND visual verification:
    - `screenshot_aplite.png` - B&W compatibility (if tested)
    - `screenshot_chalk.png` - Round display (if tested)
 
-3. **Visual Confirmation**: Describe what the watchface shows:
+3. **App Icons**: Show the generated icons
+   - `icon_80x80.png` - Small icon
+   - `icon_144x144.png` - Large icon
+
+4. **Preview GIFs** (if animated watchface):
+   - `preview_basalt.gif` - Animated color preview
+   - `preview_aplite.gif` - Animated B&W preview
+   - `preview_chalk.gif` - Animated round preview
+
+5. **Visual Confirmation**: Describe what the watchface shows:
    - Time display style and position
    - Animated elements (if any)
    - Color scheme
    - Any special features
 
-4. **Install Commands**:
+6. **Install Commands**:
    - Emulator: `pebble install --emulator basalt`
    - Device: `pebble install --cloudpebble`
 
-5. **Summary**: Brief description of what was built and verified
+7. **Summary**: Brief description of what was built and verified
 
 ---
 
@@ -433,7 +464,8 @@ After successful build AND visual verification:
 | Build | Direct | Run `pebble build` |
 | Test | Direct | Run in QEMU, screenshot, verify with Read tool |
 | Iterate | Direct | Fix code until screenshot looks correct |
-| Deliver | Direct | Report PBW + screenshots to user |
+| Generate Assets | Direct | Run `create_app_icons.py` and `create_preview_gif.py` |
+| Deliver | Direct | Report PBW + screenshots + icons + GIFs to user |
 
 ---
 
