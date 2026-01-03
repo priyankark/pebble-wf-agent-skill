@@ -1,0 +1,17 @@
+{
+  "name": "castle-watchface",
+  "author": "Pebble Developer",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Castle Knights",
+    "uuid": "5d1c07cf-889c-46a4-a527-6d98792910b0",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite"],
+    "watchapp": { "watchface": true },
+    "resources": { "media": [] }
+  }
+}

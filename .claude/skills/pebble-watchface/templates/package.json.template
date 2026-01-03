@@ -1,0 +1,21 @@
+{
+  "name": "{{WATCHFACE_NAME_SLUG}}",
+  "author": "{{AUTHOR_NAME}}",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "{{WATCHFACE_DISPLAY_NAME}}",
+    "uuid": "{{UUID}}",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite"],
+    "watchapp": {
+      "watchface": true
+    },
+    "resources": {
+      "media": []
+    }
+  }
+}
