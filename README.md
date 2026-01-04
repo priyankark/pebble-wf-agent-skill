@@ -17,7 +17,7 @@ This repository contains a **Claude Code skill** that transforms natural languag
 
 These watchfaces were generated using this agent skill and are live on the Rebble App Store:
 
-- [Persia Swordfight](https://store-beta.rebble.io/app/6959f7d4828bd90009ec53a8) - Animated Prince of Persia sword fighting scene
+- [The Swordsmen](https://store-beta.rebble.io/app/6959f7d4828bd90009ec53a8) - Animated Prince of Persia sword fighting scene
 - [Castle Knights](https://store-beta.rebble.io/app/6959302c39d92d0009244929) - Animated medieval castle with jousting knights
 
 ## Prerequisites
