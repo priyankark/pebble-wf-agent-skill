@@ -44,7 +44,7 @@ PEBBLE_SDK_ROOT = '/Users/priyankar/Library/Application Support/Pebble SDK/SDKs/
 PLATFORM = {'NAME': 'diorite', 'MAX_APP_BINARY_SIZE': 65536, 'MAX_APP_MEMORY_SIZE': 65536, 'MAX_WORKER_MEMORY_SIZE': 10240, 'MAX_RESOURCES_SIZE_APPSTORE': 262144, 'MAX_RESOURCES_SIZE': 1048576, 'DEFINES': ['PBL_PLATFORM_DIORITE', 'PBL_BW', 'PBL_RECT', 'PBL_MICROPHONE', 'PBL_HEALTH', 'PBL_SMARTSTRAP', 'PBL_DISPLAY_WIDTH=144', 'PBL_DISPLAY_HEIGHT=168'], 'BUILD_DIR': 'diorite', 'BUNDLE_BIN_DIR': 'diorite', 'ADDITIONAL_TEXT_LINES_FOR_PEBBLE_H': [], 'MAX_FONT_GLYPH_SIZE': 256, 'TAGS': ['diorite', 'bw', 'rect', 'mic', 'strap', 'health', '144w', '168h']}
 PLATFORM_NAME = 'diorite'
 PREFIX = '/usr/local'
-PROJECT_INFO = {'displayName': 'Persia Swordfight', 'uuid': '1b1a0809-9312-4c89-8ef7-9f6687b9a562', 'sdkVersion': '3', 'enableMultiJS': False, 'targetPlatforms': ['aplite', 'basalt', 'chalk', 'diorite'], 'watchapp': {'watchface': True}, 'resources': {'media': []}, 'name': 'persia-swordfight', 'shortName': 'Persia Swordfight', 'longName': 'Persia Swordfight', 'versionLabel': '1.0', 'companyName': 'Pebble Developer', 'messageKeys': {}, 'appKeys': {}}
+PROJECT_INFO = {'displayName': 'Persia Swordfight', 'uuid': '1b1a0809-9312-4c89-8ef7-9f6687b9a562', 'sdkVersion': '3', 'enableMultiJS': False, 'targetPlatforms': ['aplite', 'basalt', 'chalk', 'diorite'], 'watchapp': {'watchface': True}, 'resources': {'media': []}, 'name': 'persia-swordfight', 'shortName': 'Persia Swordfight', 'longName': 'Persia Swordfight', 'versionLabel': '1.1', 'companyName': 'Pebble Developer', 'messageKeys': {}, 'appKeys': {}}
 REQUESTED_PLATFORMS = ['aplite', 'basalt', 'chalk', 'diorite']
 RESOURCES_JSON = []
 RPATH_ST = '-Wl,-rpath,%s'
@@ -59,7 +59,7 @@ STLIB_MARKER = None
 STLIB_ST = '-l%s'
 SUPPORTED_PLATFORMS = ['basalt', 'aplite', 'diorite', 'chalk', 'flint', 'emery']
 TARGET_PLATFORMS = ['diorite', 'chalk', 'basalt', 'aplite']
-TIMESTAMP = 1767502353
+TIMESTAMP = 1767505932
 USE_GROUPS = True
 VERBOSE = 0
 WEBPACK = ['/Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin/webpack']

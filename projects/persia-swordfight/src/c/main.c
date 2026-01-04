@@ -200,8 +200,6 @@ static int8_t s_shake_frames = 0;
 static int8_t s_shake_mag = 0;
 static int8_t s_shake_dx = 0;
 static int8_t s_shake_dy = 0;
-// Haptics cooldown (frames) to avoid over-vibrating
-static int s_vibe_cooldown = 0;
 
 // Forward decls
 static void update_fighter_interpolation(Fighter *f);
@@ -692,11 +690,6 @@ static void update_anim(void) {
             }
 #endif
 
-            // Light haptic with cooldown to avoid overuse
-            if (s_battery > 50 && s_vibe_cooldown == 0) {
-                vibes_short_pulse();
-                s_vibe_cooldown = 90; // ~2 seconds at 22ms/frame
-            }
         }
     }
 
@@ -724,10 +717,6 @@ static void update_anim(void) {
         if (s_spark_life <= 0) s_sparks = false;
     }
 
-    // Haptics cooldown decrement
-    if (s_vibe_cooldown > 0) {
-        s_vibe_cooldown--;
-    }
 
     // Update camera shake offsets (only if enabled)
 #if ENABLE_CLASH_SHAKE
