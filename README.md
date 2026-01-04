@@ -13,6 +13,13 @@ This repository contains a **Claude Code skill** that transforms natural languag
 5. **Verify** visually with screenshots
 6. **Deliver** the final artifacts with app icons and animated previews
 
+## Sample Watchfaces
+
+These watchfaces were generated using this agent skill and are live on the Rebble App Store:
+
+- [Persia Swordfight](https://store-beta.rebble.io/app/6959f7d4828bd90009ec53a8) - Animated Prince of Persia sword fighting scene
+- [Beach Watchface](https://store-beta.rebble.io/app/6959302c39d92d0009244929) - Animated beach scene with waves and sandcastle
+
 ## Prerequisites
 
 Before using this skill, ensure you have:
