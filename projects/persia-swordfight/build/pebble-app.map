@@ -434,8 +434,6 @@ Discarded input sections
                 0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_set_selected_index
                 0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
- .text.snprintf
-                0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.srand    0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strcat   0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.strcmp   0x0000000000000000        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
@@ -1159,7 +1157,7 @@ LOAD /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolcha
  .note.gnu.build-id
                 0x0000000000000084       0x24 linker stubs
 
-.text           0x00000000000000a8     0x1566
+.text           0x00000000000000a8     0x1656
  *(.text)
  .text          0x00000000000000a8       0x14 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  *(.text.*)
@@ -1168,237 +1166,244 @@ LOAD /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolcha
  .text.update_fighter_interpolation
                 0x00000000000000dc       0x88 src/c/main.c.33.o
  .text.battery_cb
-                0x0000000000000164       0x14 src/c/main.c.33.o
- .text.tick_cb  0x0000000000000178       0x6c src/c/main.c.33.o
+                0x0000000000000164       0x3c src/c/main.c.33.o
+ .text.tick_cb  0x00000000000001a0       0x6c src/c/main.c.33.o
  .text.win_unload
-                0x00000000000001e4       0x40 src/c/main.c.33.o
+                0x000000000000020c       0x50 src/c/main.c.33.o
  .text.compute_sword_points
-                0x0000000000000224       0xbc src/c/main.c.33.o
+                0x000000000000025c       0xbc src/c/main.c.33.o
  .text.timer_cb
-                0x00000000000002e0      0x418 src/c/main.c.33.o
- .text.draw_line_outlined.7640
-                0x00000000000006f8       0x50 src/c/main.c.33.o
+                0x0000000000000318      0x418 src/c/main.c.33.o
+ .text.draw_line_outlined.7642
+                0x0000000000000730       0x50 src/c/main.c.33.o
  .text.draw_fighter
-                0x0000000000000748      0x634 src/c/main.c.33.o
+                0x0000000000000780      0x634 src/c/main.c.33.o
  .text.canvas_proc
-                0x0000000000000d7c      0x2fc src/c/main.c.33.o
+                0x0000000000000db4      0x2fc src/c/main.c.33.o
  .text.win_load
-                0x0000000000001078      0x190 src/c/main.c.33.o
+                0x00000000000010b0      0x220 src/c/main.c.33.o
  .text.startup.main
-                0x0000000000001208       0xa8 src/c/main.c.33.o
-                0x0000000000001208                main
+                0x00000000000012d0       0xa8 src/c/main.c.33.o
+                0x00000000000012d0                main
  .text.app_event_loop
-                0x00000000000012b0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012b0                app_event_loop
+                0x0000000000001378        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001378                app_event_loop
  .text.app_timer_cancel
-                0x00000000000012bc        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012bc                app_timer_cancel
+                0x0000000000001384        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001384                app_timer_cancel
  .text.app_timer_register
-                0x00000000000012c8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012c8                app_timer_register
+                0x0000000000001390        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001390                app_timer_register
  .text.battery_state_service_peek
-                0x00000000000012d4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012d4                battery_state_service_peek
+                0x000000000000139c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000139c                battery_state_service_peek
  .text.battery_state_service_subscribe
-                0x00000000000012e0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012e0                battery_state_service_subscribe
+                0x00000000000013a8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013a8                battery_state_service_subscribe
  .text.battery_state_service_unsubscribe
-                0x00000000000012ec        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012ec                battery_state_service_unsubscribe
+                0x00000000000013b4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013b4                battery_state_service_unsubscribe
  .text.clock_is_24h_style
-                0x00000000000012f8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000012f8                clock_is_24h_style
+                0x00000000000013c0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013c0                clock_is_24h_style
  .text.cos_lookup
-                0x0000000000001304        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001304                cos_lookup
+                0x00000000000013cc        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013cc                cos_lookup
  .text.fonts_get_system_font
-                0x0000000000001310        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001310                fonts_get_system_font
+                0x00000000000013d8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013d8                fonts_get_system_font
  .text.graphics_draw_line
-                0x000000000000131c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000131c                graphics_draw_line
+                0x00000000000013e4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013e4                graphics_draw_line
  .text.graphics_fill_circle
-                0x0000000000001328        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001328                graphics_fill_circle
+                0x00000000000013f0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013f0                graphics_fill_circle
  .text.graphics_fill_rect
-                0x0000000000001334        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001334                graphics_fill_rect
+                0x00000000000013fc        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000013fc                graphics_fill_rect
  .text.layer_add_child
-                0x0000000000001340        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001340                layer_add_child
+                0x0000000000001408        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001408                layer_add_child
  .text.layer_create
-                0x000000000000134c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000134c                layer_create
+                0x0000000000001414        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001414                layer_create
  .text.layer_destroy
-                0x0000000000001358        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001358                layer_destroy
+                0x0000000000001420        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001420                layer_destroy
  .text.layer_get_bounds
-                0x0000000000001364        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001364                layer_get_bounds
+                0x000000000000142c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000142c                layer_get_bounds
  .text.layer_mark_dirty
-                0x0000000000001370        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001370                layer_mark_dirty
+                0x0000000000001438        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001438                layer_mark_dirty
  .text.layer_set_update_proc
-                0x000000000000137c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000137c                layer_set_update_proc
- .text.memset   0x0000000000001388        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001388                memset
+                0x0000000000001444        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001444                layer_set_update_proc
+ .text.memset   0x0000000000001450        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001450                memset
  .text.sin_lookup
-                0x0000000000001394        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001394                sin_lookup
+                0x000000000000145c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000145c                sin_lookup
+ .text.snprintf
+                0x0000000000001468        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001468                snprintf
  .text.strftime
-                0x00000000000013a0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013a0                strftime
+                0x0000000000001474        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001474                strftime
  .text.tick_timer_service_subscribe
-                0x00000000000013ac        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013ac                tick_timer_service_subscribe
+                0x0000000000001480        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001480                tick_timer_service_subscribe
  .text.tick_timer_service_unsubscribe
-                0x00000000000013b8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013b8                tick_timer_service_unsubscribe
+                0x000000000000148c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000148c                tick_timer_service_unsubscribe
  .text.vibes_short_pulse
-                0x00000000000013c4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013c4                vibes_short_pulse
+                0x0000000000001498        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001498                vibes_short_pulse
  .text.window_create
-                0x00000000000013d0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013d0                window_create
+                0x00000000000014a4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014a4                window_create
  .text.window_destroy
-                0x00000000000013dc        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013dc                window_destroy
+                0x00000000000014b0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014b0                window_destroy
  .text.window_get_root_layer
-                0x00000000000013e8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013e8                window_get_root_layer
+                0x00000000000014bc        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014bc                window_get_root_layer
  .text.window_set_window_handlers
-                0x00000000000013f4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000013f4                window_set_window_handlers
+                0x00000000000014c8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014c8                window_set_window_handlers
  .text.window_stack_push
-                0x0000000000001400        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001400                window_stack_push
+                0x00000000000014d4        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014d4                window_stack_push
  .text.graphics_context_set_fill_color
-                0x000000000000140c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000140c                graphics_context_set_fill_color
+                0x00000000000014e0        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014e0                graphics_context_set_fill_color
  .text.graphics_context_set_stroke_color
-                0x0000000000001418        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001418                graphics_context_set_stroke_color
+                0x00000000000014ec        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014ec                graphics_context_set_stroke_color
  .text.window_set_background_color
-                0x0000000000001424        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001424                window_set_background_color
+                0x00000000000014f8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x00000000000014f8                window_set_background_color
  .text.localtime
-                0x0000000000001430        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001430                localtime
+                0x0000000000001504        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001504                localtime
  .text.graphics_context_set_stroke_width
-                0x000000000000143c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000143c                graphics_context_set_stroke_width
+                0x0000000000001510        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001510                graphics_context_set_stroke_width
  .text.text_layer_create
-                0x0000000000001448        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001448                text_layer_create
+                0x000000000000151c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000151c                text_layer_create
  .text.text_layer_destroy
-                0x0000000000001454        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001454                text_layer_destroy
+                0x0000000000001528        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001528                text_layer_destroy
  .text.text_layer_get_layer
-                0x0000000000001460        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001460                text_layer_get_layer
+                0x0000000000001534        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001534                text_layer_get_layer
  .text.text_layer_set_background_color
-                0x000000000000146c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000146c                text_layer_set_background_color
+                0x0000000000001540        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001540                text_layer_set_background_color
  .text.text_layer_set_font
-                0x0000000000001478        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001478                text_layer_set_font
+                0x000000000000154c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000154c                text_layer_set_font
  .text.text_layer_set_text
-                0x0000000000001484        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001484                text_layer_set_text
+                0x0000000000001558        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001558                text_layer_set_text
  .text.text_layer_set_text_alignment
-                0x0000000000001490        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x0000000000001490                text_layer_set_text_alignment
+                0x0000000000001564        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001564                text_layer_set_text_alignment
  .text.text_layer_set_text_color
-                0x000000000000149c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x000000000000149c                text_layer_set_text_color
- .text.time     0x00000000000014a8        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
-                0x00000000000014a8                time
+                0x0000000000001570        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000001570                text_layer_set_text_color
+ .text.time     0x000000000000157c        0xc /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x000000000000157c                time
  *(.rodata)
- .rodata        0x00000000000014b4        0xc src/c/main.c.33.o
+ .rodata        0x0000000000001588        0xc src/c/main.c.33.o
  *(.rodata*)
- .rodata.s_seq  0x00000000000014c0       0x9c src/c/main.c.33.o
+ .rodata.s_seq  0x0000000000001594       0x9c src/c/main.c.33.o
  .rodata.str1.1
-                0x000000000000155c       0x51 src/c/main.c.33.o
- *fill*         0x00000000000015ad        0x1 
- .rodata.POSES  0x00000000000015ae       0x60 src/c/main.c.33.o
+                0x0000000000001630       0x6d src/c/main.c.33.o
+ *fill*         0x000000000000169d        0x1 
+ .rodata.POSES  0x000000000000169e       0x60 src/c/main.c.33.o
 
-.glue_7         0x0000000000001610        0x0
+.glue_7         0x0000000000001700        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000001610        0x0
+.glue_7t        0x0000000000001700        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000001610        0x0
+.vfp11_veneer   0x0000000000001700        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000001610        0x0
+.v4_bx          0x0000000000001700        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x0000000000001610        0x0
+.iplt           0x0000000000001700        0x0
  .iplt          0x0000000000000000        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.rel.dyn        0x0000000000001610        0x0
+.rel.dyn        0x0000000000001700        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.data           0x0000000000001610        0x8
+.data           0x0000000000001700        0x8
  *(.data)
- .data          0x0000000000001610        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
- .data          0x0000000000001610        0x4 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
-                0x0000000000001610                __dso_handle
- .data          0x0000000000001614        0x0 src/c/main.c.33.o
- .data          0x0000000000001614        0x0 aplite/appinfo.auto.c.33.o
- .data          0x0000000000001614        0x0 aplite/src/resource_ids.auto.c.33.o
- .data          0x0000000000001614        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
- .data          0x0000000000001614        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
- .data          0x0000000000001614        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x0000000000001700        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x0000000000001700        0x4 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x0000000000001700                __dso_handle
+ .data          0x0000000000001704        0x0 src/c/main.c.33.o
+ .data          0x0000000000001704        0x0 aplite/appinfo.auto.c.33.o
+ .data          0x0000000000001704        0x0 aplite/src/resource_ids.auto.c.33.o
+ .data          0x0000000000001704        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .data          0x0000000000001704        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x0000000000001704        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
  *(.data.*)
  .data.s_battery
-                0x0000000000001614        0x4 src/c/main.c.33.o
+                0x0000000000001704        0x4 src/c/main.c.33.o
 
-.igot.plt       0x0000000000001618        0x0
+.igot.plt       0x0000000000001708        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
 
-.bss            0x0000000000001618       0x6d
+.bss            0x0000000000001708       0x79
  *(.bss)
  *(.bss.*)
- .bss.s_shake_frames
-                0x0000000000001618        0x1 src/c/main.c.33.o
- .bss.s_shake_mag
-                0x0000000000001619        0x1 src/c/main.c.33.o
- *fill*         0x000000000000161a        0x2 
- .bss.s_vibe_cooldown
-                0x000000000000161c        0x4 src/c/main.c.33.o
- .bss.s_timer   0x0000000000001620        0x4 src/c/main.c.33.o
  .bss.s_spark_life
-                0x0000000000001624        0x4 src/c/main.c.33.o
- .bss.s_seq_idx
-                0x0000000000001628        0x4 src/c/main.c.33.o
- .bss.s_date_lyr
-                0x000000000000162c        0x4 src/c/main.c.33.o
- .bss.s_shake_dx
-                0x0000000000001630        0x1 src/c/main.c.33.o
- .bss.s_shake_dy
-                0x0000000000001631        0x1 src/c/main.c.33.o
- .bss.s_guard   0x0000000000001632       0x10 src/c/main.c.33.o
- *fill*         0x0000000000001642        0x2 
- .bss.s_gframe  0x0000000000001644        0x4 src/c/main.c.33.o
- .bss.s_canvas  0x0000000000001648        0x4 src/c/main.c.33.o
- .bss.s_time_buf
-                0x000000000000164c        0x8 src/c/main.c.33.o
- .bss.s_date_buf
-                0x0000000000001654       0x10 src/c/main.c.33.o
- .bss.s_spark_y
-                0x0000000000001664        0x2 src/c/main.c.33.o
- .bss.s_spark_x
-                0x0000000000001666        0x2 src/c/main.c.33.o
- .bss.s_prince  0x0000000000001668       0x10 src/c/main.c.33.o
- .bss.s_seq_frame
-                0x0000000000001678        0x4 src/c/main.c.33.o
+                0x0000000000001708        0x4 src/c/main.c.33.o
  .bss.s_time_lyr
-                0x000000000000167c        0x4 src/c/main.c.33.o
- .bss.s_win     0x0000000000001680        0x4 src/c/main.c.33.o
- .bss.s_sparks  0x0000000000001684        0x1 src/c/main.c.33.o
+                0x000000000000170c        0x4 src/c/main.c.33.o
+ .bss.s_shake_mag
+                0x0000000000001710        0x1 src/c/main.c.33.o
+ .bss.s_shake_frames
+                0x0000000000001711        0x1 src/c/main.c.33.o
+ *fill*         0x0000000000001712        0x2 
+ .bss.s_vibe_cooldown
+                0x0000000000001714        0x4 src/c/main.c.33.o
+ .bss.s_timer   0x0000000000001718        0x4 src/c/main.c.33.o
+ .bss.s_seq_idx
+                0x000000000000171c        0x4 src/c/main.c.33.o
+ .bss.s_batt_buf
+                0x0000000000001720        0x8 src/c/main.c.33.o
+ .bss.s_date_lyr
+                0x0000000000001728        0x4 src/c/main.c.33.o
+ .bss.s_shake_dx
+                0x000000000000172c        0x1 src/c/main.c.33.o
+ .bss.s_shake_dy
+                0x000000000000172d        0x1 src/c/main.c.33.o
+ .bss.s_guard   0x000000000000172e       0x10 src/c/main.c.33.o
+ *fill*         0x000000000000173e        0x2 
+ .bss.s_gframe  0x0000000000001740        0x4 src/c/main.c.33.o
+ .bss.s_canvas  0x0000000000001744        0x4 src/c/main.c.33.o
+ .bss.s_time_buf
+                0x0000000000001748        0x8 src/c/main.c.33.o
+ .bss.s_date_buf
+                0x0000000000001750       0x10 src/c/main.c.33.o
+ .bss.s_spark_y
+                0x0000000000001760        0x2 src/c/main.c.33.o
+ .bss.s_spark_x
+                0x0000000000001762        0x2 src/c/main.c.33.o
+ .bss.s_prince  0x0000000000001764       0x10 src/c/main.c.33.o
+ .bss.s_seq_frame
+                0x0000000000001774        0x4 src/c/main.c.33.o
+ .bss.s_batt_lyr
+                0x0000000000001778        0x4 src/c/main.c.33.o
+ .bss.s_win     0x000000000000177c        0x4 src/c/main.c.33.o
+ .bss.s_sparks  0x0000000000001780        0x1 src/c/main.c.33.o
 
 DISCARD
  libc.a(*)
@@ -1434,15 +1439,15 @@ OUTPUT(/Users/priyankar/Desktop/pebble-wf-skill/projects/persia-swordfight/build
  .comment       0x0000000000000000       0x4f aplite/src/resource_ids.auto.c.33.o
  .comment       0x0000000000000000       0x4f /Users/priyankar/Library/Application Support/Pebble SDK/SDKs/4.9.77/toolchain/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
 
-.debug_info     0x0000000000000000     0x296f
- .debug_info    0x0000000000000000     0x25f1 src/c/main.c.33.o
- .debug_info    0x00000000000025f1      0x31a aplite/appinfo.auto.c.33.o
- .debug_info    0x000000000000290b       0x64 aplite/src/resource_ids.auto.c.33.o
+.debug_info     0x0000000000000000     0x2a94
+ .debug_info    0x0000000000000000     0x2716 src/c/main.c.33.o
+ .debug_info    0x0000000000002716      0x31a aplite/appinfo.auto.c.33.o
+ .debug_info    0x0000000000002a30       0x64 aplite/src/resource_ids.auto.c.33.o
 
-.debug_abbrev   0x0000000000000000      0x527
- .debug_abbrev  0x0000000000000000      0x463 src/c/main.c.33.o
- .debug_abbrev  0x0000000000000463       0x9e aplite/appinfo.auto.c.33.o
- .debug_abbrev  0x0000000000000501       0x26 aplite/src/resource_ids.auto.c.33.o
+.debug_abbrev   0x0000000000000000      0x52c
+ .debug_abbrev  0x0000000000000000      0x468 src/c/main.c.33.o
+ .debug_abbrev  0x0000000000000468       0x9e aplite/appinfo.auto.c.33.o
+ .debug_abbrev  0x0000000000000506       0x26 aplite/src/resource_ids.auto.c.33.o
 
 .debug_loc      0x0000000000000000     0x1d62
  .debug_loc     0x0000000000000000     0x1d62 src/c/main.c.33.o
@@ -1458,18 +1463,18 @@ OUTPUT(/Users/priyankar/Desktop/pebble-wf-skill/projects/persia-swordfight/build
 .debug_ranges   0x0000000000000000      0x208
  .debug_ranges  0x0000000000000000      0x208 src/c/main.c.33.o
 
-.debug_line     0x0000000000000000      0x80c
- .debug_line    0x0000000000000000      0x691 src/c/main.c.33.o
- .debug_line    0x0000000000000691      0x15e aplite/appinfo.auto.c.33.o
- .debug_line    0x00000000000007ef       0x1d aplite/src/resource_ids.auto.c.33.o
+.debug_line     0x0000000000000000      0x82a
+ .debug_line    0x0000000000000000      0x6af src/c/main.c.33.o
+ .debug_line    0x00000000000006af      0x15e aplite/appinfo.auto.c.33.o
+ .debug_line    0x000000000000080d       0x1d aplite/src/resource_ids.auto.c.33.o
 
-.debug_str      0x0000000000000000      0xd56
- .debug_str     0x0000000000000000      0xb01 src/c/main.c.33.o
-                                        0xbf3 (size before relaxing)
- .debug_str     0x0000000000000b01      0x236 aplite/appinfo.auto.c.33.o
+.debug_str      0x0000000000000000      0xd75
+ .debug_str     0x0000000000000000      0xb20 src/c/main.c.33.o
+                                        0xc12 (size before relaxing)
+ .debug_str     0x0000000000000b20      0x236 aplite/appinfo.auto.c.33.o
                                         0x338 (size before relaxing)
- .debug_str     0x0000000000000d37       0x1f aplite/src/resource_ids.auto.c.33.o
+ .debug_str     0x0000000000000d56       0x1f aplite/src/resource_ids.auto.c.33.o
                                          0xf9 (size before relaxing)
 
-.debug_frame    0x0000000000000000      0x1a0
- .debug_frame   0x0000000000000000      0x1a0 src/c/main.c.33.o
+.debug_frame    0x0000000000000000      0x1a8
+ .debug_frame   0x0000000000000000      0x1a8 src/c/main.c.33.o

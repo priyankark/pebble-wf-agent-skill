@@ -183,13 +183,13 @@ static const Move s_seq[] = {
 // ===========================================================================
 static Window *s_win;
 static Layer *s_canvas;
-static TextLayer *s_time_lyr, *s_date_lyr;
+static TextLayer *s_time_lyr, *s_date_lyr, *s_batt_lyr;
 static AppTimer *s_timer;
 
 static Fighter s_prince, s_guard;
 static int s_seq_idx = 0, s_seq_frame = 0, s_gframe = 0;
 static int s_battery = 100;
-static char s_time_buf[8], s_date_buf[16];
+static char s_time_buf[8], s_date_buf[16], s_batt_buf[8];
 
 static bool s_sparks = false;
 static int s_spark_life = 0;
@@ -762,7 +762,11 @@ static void tick_cb(struct tm *t, TimeUnits u) {
     text_layer_set_text(s_date_lyr, s_date_buf);
 }
 
-static void battery_cb(BatteryChargeState s) { s_battery = s.charge_percent; }
+static void battery_cb(BatteryChargeState s) {
+    s_battery = s.charge_percent;
+    snprintf(s_batt_buf, sizeof(s_batt_buf), "%d%%", s_battery);
+    text_layer_set_text(s_batt_lyr, s_batt_buf);
+}
 
 // ===========================================================================
 // WINDOW
@@ -775,12 +779,20 @@ static void win_load(Window *w) {
     layer_set_update_proc(s_canvas, canvas_proc);
     layer_add_child(root, s_canvas);
 
-    s_time_lyr = text_layer_create(GRect(0, -4, b.size.w, 38));
+    s_time_lyr = text_layer_create(GRect(0, 4, b.size.w, 32));
     text_layer_set_background_color(s_time_lyr, GColorClear);
     text_layer_set_text_color(s_time_lyr, COL_TIME);
-    text_layer_set_font(s_time_lyr, fonts_get_system_font(FONT_KEY_LECO_32_BOLD_NUMBERS));
+    text_layer_set_font(s_time_lyr, fonts_get_system_font(FONT_KEY_LECO_28_LIGHT_NUMBERS));
     text_layer_set_text_alignment(s_time_lyr, GTextAlignmentCenter);
     layer_add_child(root, text_layer_get_layer(s_time_lyr));
+
+    // Battery indicator at top right
+    s_batt_lyr = text_layer_create(GRect(b.size.w - 38, 4, 36, 16));
+    text_layer_set_background_color(s_batt_lyr, GColorClear);
+    text_layer_set_text_color(s_batt_lyr, COL_TIME);
+    text_layer_set_font(s_batt_lyr, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+    text_layer_set_text_alignment(s_batt_lyr, GTextAlignmentRight);
+    layer_add_child(root, text_layer_get_layer(s_batt_lyr));
 
     s_date_lyr = text_layer_create(GRect(0, GROUND_Y + 1, b.size.w, 18));
     text_layer_set_background_color(s_date_lyr, GColorClear);
@@ -796,12 +808,17 @@ static void win_load(Window *w) {
 
     time_t now = time(NULL);
     tick_cb(localtime(&now), MINUTE_UNIT);
+
+    // Initialize battery display
+    snprintf(s_batt_buf, sizeof(s_batt_buf), "%d%%", s_battery);
+    text_layer_set_text(s_batt_lyr, s_batt_buf);
 }
 
 static void win_unload(Window *w) {
     if (s_timer) app_timer_cancel(s_timer);
     text_layer_destroy(s_time_lyr);
     text_layer_destroy(s_date_lyr);
+    text_layer_destroy(s_batt_lyr);
     layer_destroy(s_canvas);
 }
 
