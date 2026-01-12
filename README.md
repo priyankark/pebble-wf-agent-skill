@@ -25,9 +25,7 @@ These watchfaces were generated using this agent skill and are live on the Rebbl
 Before using this skill, ensure you have:
 
 - **Claude Code CLI** installed and configured
-- **Pebble SDK** installed and in your PATH
-  - Install via: `pip install pebble-sdk`
-  - Or from [Rebble's developer portal](https://developer.rebble.io/)
+- **Pebble SDK** Follow the instructions in the official [documentation](https://developer.repebble.com/sdk/)
 - **QEMU** for emulator testing (bundled with Pebble SDK)
 - **Python 3** with Pillow (`pip install Pillow`) for icon/GIF generation
 
