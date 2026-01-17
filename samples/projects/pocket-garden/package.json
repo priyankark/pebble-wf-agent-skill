@@ -1,0 +1,17 @@
+{
+  "name": "pocket-garden",
+  "author": "Pebble Developer",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Pocket Garden",
+    "uuid": "4a318608-37db-43d8-b3ec-f66e6b3ee942",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite"],
+    "watchapp": { "watchface": true },
+    "resources": { "media": [] }
+  }
+}
