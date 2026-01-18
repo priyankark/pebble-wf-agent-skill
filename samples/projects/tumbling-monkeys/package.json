@@ -1,0 +1,17 @@
+{
+  "name": "tumbling-monkeys",
+  "author": "Pebble Watchface Generator",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Tumbling Monkeys",
+    "uuid": "72ab22f9-99d8-451e-893e-b6f943a2ee32",
+    "sdkVersion": "3",
+    "enableMultiJS": false,
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite"],
+    "watchapp": { "watchface": true },
+    "resources": { "media": [] }
+  }
+}
