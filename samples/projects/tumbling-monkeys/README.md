@@ -9,6 +9,10 @@ A fun, animated Pebble watchface featuring playful monkeys swinging through the 
 - **Time & Date** - Clear time display with day and date
 - **Battery Indicator** - Color-coded battery level (green/orange/red)
 - **Jungle Scene** - Lush canopy, swinging vines, and branches
+- **Ultra-Efficient Mode** - Auto FPS cap on B/W and low battery; manual toggle
+  - Up button: toggle low-power (FPS cap)
+  - Down button: toggle vibrations
+  - Animation pauses when charging or Bluetooth is disconnected
 
 ## Monkey Tricks
 
